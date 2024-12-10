@@ -4,20 +4,22 @@ import Image from 'next/image'
 
 const Hero =()=> {
   return (
-    <div className=" home flex flex-col  lg:flex-row items-center justify-around bg-gray-100 p-8 lg:p-16 rounded-lg space-y-8 lg:space-y-0 lg:ml-16">
+    <div className="flex flex-col rounded-b-[48px] md:flex-row items-center justify-around bg-gray-100 p-8  space-y-8 md:mx-52">
       {/* Text Section */}
-      <div className="max-w-lg text-center lg:text-left">
-        <p className="text-sm font-medium text-gray-500 uppercase mb-2">Welcome to Chairy</p>
-        <h1 className="text-3xl lg:text-5xl font-bold text-gray-800 mb-4">
-          Best Furniture Collection For Your Interior.
+      <div className="wrapper text-center md:text-left">
+        <p className="text-sm font-normal text-[#272343] ml-2 uppercase mb-2">Welcome to Chairy</p>
+        <h1 className="text-4xl md:text-3xl font-bold text-[#272343] mb-4 w-[198px] h-[198px] ">
+          Best Furniture
+          <br /> Collection For Your
+          <br /> Interior.
         </h1>
-        <button className="bg-teal-500 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-teal-600">
+        <button className="bg-[#029FAE]  text-white px-6 py-[14px] rounded-lg text-sm font-medium hover:bg-teal-600">
           Shop Now →
         </button>
       </div>
 
       {/* Image Section */}
-      <div className="flex-shrink-0">
+      <div className="flex w-[434px] h-[584px] mt-[115px]  ">
         <Image
           src="/images/Product Image.png"
           alt="Furniture Chair"

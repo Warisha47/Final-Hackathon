@@ -58,7 +58,7 @@ const OurProducts = () => {
             </div>
 {/* 5 */}
             <div className="flex flex-col items-center">
-              <Image className="w-full h-48 object-cover rounded-lg" src="/images/category.png" alt="Image 2" width={300} height={300} />
+              <Image className="w-full h-48 object-cover rounded-lg" src="/images/Category.png" alt="Image 2" width={300} height={300} />
               <div className="mt-2 text-start">
                 <p className="text-base text-[#007580] font-normal text-start mr-28">Library Stool Chair</p>
                 <p className="text-lg text-[#272343]">$20</p>
