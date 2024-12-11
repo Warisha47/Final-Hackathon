@@ -8,9 +8,9 @@ const FeaturedProducts = () => {
   return (
     <div>
       <section className="bg-white dark:bg-gray-900">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 wrapper">
           <div className="max-w-screen-md mb-8 lg:mb-16">
-            <h2 className={`${inter.className}-mb-9 text-[24px] tracking-tight font-semibold text-[#272343] dark:text-white`}>
+            <h2 className={`${inter.className}-mb-9 text-[24px] wrapper tracking-tight font-semibold text-[#272343] dark:text-white`}>
               Featured Products
             </h2>
           </div>

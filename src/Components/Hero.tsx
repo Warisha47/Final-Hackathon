@@ -4,22 +4,21 @@ import Image from 'next/image'
 
 const Hero =()=> {
   return (
-    <div className="flex flex-col rounded-b-[48px] md:flex-row items-center justify-around bg-gray-100 p-8  space-y-8 md:mx-52">
+    <div className="flex wrapper h-[550px] flex-col rounded-b-[48px] md:flex-row items-center justify-around bg-gray-100 p-8  space-y-8 md:mx-52">
       {/* Text Section */}
       <div className="wrapper text-center md:text-left">
         <p className="text-sm font-normal text-[#272343] ml-2 uppercase mb-2">Welcome to Chairy</p>
-        <h1 className="text-4xl md:text-3xl font-bold text-[#272343] mb-4 w-[198px] h-[198px] ">
+        <h1 className="text-2xl md:text-5xl font-bold text-[#272343] mb-4 w-[490px] h-[178px] ">
           Best Furniture
-          <br /> Collection For Your
-          <br /> Interior.
+          Collection For Your Interior.
         </h1>
-        <button className="bg-[#029FAE]  text-white px-6 py-[14px] rounded-lg text-sm font-medium hover:bg-teal-600">
+        <button className="bg-[#029FAE]  text-white px-6 py-[14px] rounded-lg text-[16px] font-medium hover:bg-teal-600">
           Shop Now →
         </button>
       </div>
 
       {/* Image Section */}
-      <div className="flex w-[434px] h-[584px] mt-[115px]  ">
+      <div className="flex w-[280px] h-[374px] mt-[115px]  ">
         <Image
           src="/images/Product Image.png"
           alt="Furniture Chair"
