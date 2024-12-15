@@ -1,4 +1,10 @@
 import React from 'react'
+import { TbTruckDelivery } from "react-icons/tb";
+import { FaRegCheckCircle } from "react-icons/fa";
+import { CiCreditCard1 } from "react-icons/ci";
+
+
+
 
 // Install Tailwind CSS by following the official documentation:
 // https://tailwindcss.com/docs/installation
@@ -15,7 +21,7 @@ export default function About() {
               <p className="text-base leading-relaxed">
                 At Comforty, we believe that the right chair can transform your space and elevate your comfort. Specializing in ergonomics, premium materials, and modern aesthetics, we craft chairs that seamlessly blend style with functionality.
               </p>
-              <button className="mt-6 px-4 py-2 bg-white text-teal-600 font-medium rounded shadow hover:bg-gray-100">
+              <button className="mt-6 px-4 py-2 bg-[#F9F9F9] text-teal-600 font-medium rounded shadow hover:bg-gray-100">
                 View collection
               </button>
             </div>
@@ -30,25 +36,26 @@ export default function About() {
   
           {/* Brand Differentiators Section */}
           <div className="mt-16 text-center">
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">
+            <h2 className="text-3xl font-semibold text-gray-900 mb-8">
               What Makes Our Brand Different
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 text-[#007580] sm:grid-cols-2 lg:grid-cols-4  gap-6">
               {[
                 {
                   title: 'Next day as standard',
                   description: 'Order before 3pm and get your order the next day as standard.',
-                  icon: '📦',
+                  icon: <TbTruckDelivery className='w-[24px] h-[24px]' />
+
                 },
                 {
                   title: 'Made by true artisans',
                   description: 'Handmade crafted goods made with real passion and craftsmanship.',
-                  icon: '🛠️',
+                  icon: <FaRegCheckCircle className='h-[24px] w-[24px]'/>,
                 },
                 {
                   title: 'Unbeatable prices',
                   description: 'For our materials and quality you won’t find better prices anywhere.',
-                  icon: '💰',
+                  icon: <CiCreditCard1 className='h-[24px] w-[24px]'/>,
                 },
                 {
                   title: 'Recycled packaging',
@@ -58,13 +65,13 @@ export default function About() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white shadow rounded-lg p-6 text-center"
+                  className="bg-[#F9F9F9] shadow rounded-lg p-6 text-[#007580] text-start"
                 >
-                  <div className="text-4xl mb-4">{item.icon}</div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                  <div className=" mb-4">{item.icon}</div>
+                  <h3 className="text-lg font-semibold  text-[#007580]  mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-gray-600">{item.description}</p>
+                  <p className="text-base font-[400px] w-[179px] text-[#007580]">{item.description}</p>
                 </div>
               ))}
             </div>

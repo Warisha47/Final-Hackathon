@@ -1,9 +1,11 @@
 
 
-import Hero from "../Components/Hero";
-import { HeroLogo } from "../Components/Hero";
-import FeaturedProducts, { Categories, SubCategory } from "../Components/FeaturedProducts";
-import OurProducts from "../Components/OurProducts";
+import Hero from "../components/Hero";
+import { HeroLogo } from "../components/Hero";
+import FeaturedProducts from "../components/FeaturedProducts";
+import TopCategories from "@/components/TopCategories";
+import {SubCategory} from "../components/SubCategories";
+import OurProducts from "../components/OurProducts";
 
 
 export default function Home() {
@@ -13,11 +15,11 @@ export default function Home() {
   <Hero/>
    <HeroLogo/>
    <FeaturedProducts/>
-   <Categories/>
+   <TopCategories/>
    <SubCategory/>
   <OurProducts/>
    
-   
+
    </div>
   );
 }
