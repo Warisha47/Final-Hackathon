@@ -11,8 +11,10 @@ const FeaturedProducts = () => {
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-36 wrapper">
           <div className="max-w-screen-md mb-8 lg:mb-10">
             <h2 className={`${inter.className}  -mb-9 text-[24px] wrapper tracking-tight font-semibold text-[#272343] dark:text-white`}>
-              Featured Products
+              Featured Products 
+              
             </h2>
+            
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="flex flex-col items-center">

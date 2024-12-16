@@ -11,7 +11,7 @@ const page = () => {
     <div>
         <section className="text-gray-600 body-font ">
   <div className="container mx-auto flex px-5 py-24  md:flex-row flex-col items-center">
-    <div className="lg:max-w-lg lg:w-[505px] lg:h-[400px] md:w-1/2 w-5/6 mb-10 md:mb-0">
+    <div className="  lg:w-[505px] lg:h-[400px] md:w-1/2 w-[300px] mb-10 md:mb-0">
       <Image
         className="object-cover h-full w-full lg:ml-40 object-center rounded"
         alt="chair"
@@ -42,13 +42,17 @@ const page = () => {
 </section>
       {/* featured product */}
        <div>
-         <section className="bg-white dark:bg-gray-900 wrapper">
+
+         <section className="bg-white h dark:bg-gray-900 wrapper">
            <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-36 wrapper">
-             <div className="max-w-screen-md mb-8 lg:mb-10">
-               <h2 className={`${inter.className}  lg:mb-9 tracking-wide text-[24px] wrapper  font-semibold text-[#272343] dark:text-white`}>
+             <div className="max-w-screen-md mb-8 lg:mb-10 ">
+               <h2 className={`${inter.className}  lg:mb-9 tracking-wide text-[24px] text-center md:text-start wrapper  font-semibold text-[#272343] dark:text-white`}>
                  FEATURED PRODUCTS
+                 
                </h2>
+              
              </div>
+             
              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
                <div className="flex flex-col items-center">
                  
