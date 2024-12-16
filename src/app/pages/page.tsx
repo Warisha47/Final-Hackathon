@@ -5,7 +5,7 @@ import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { Inter } from 'next/font/google';
 
 
-const inter = Inter({ subsets: ["latin"] });
+
 const page = () => {
   return (
     <div>
@@ -46,7 +46,7 @@ const page = () => {
          <section className="bg-white h dark:bg-gray-900 wrapper">
            <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-36 wrapper">
              <div className="max-w-screen-md mb-8 lg:mb-10 ">
-               <h2 className={`${inter.className}  lg:mb-9 tracking-wide text-[24px] text-center md:text-start wrapper  font-semibold text-[#272343] dark:text-white`}>
+               <h2 className="font-inter lg:mb-9 tracking-wide text-[24px] text-center md:text-start wrapper  font-semibold text-[#272343] dark:text-white">
                  FEATURED PRODUCTS
                  
                </h2>
