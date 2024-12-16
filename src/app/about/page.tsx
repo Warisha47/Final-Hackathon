@@ -3,43 +3,41 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { CiCreditCard1 } from "react-icons/ci";
 
+import Image from 'next/image';
 
 
-
-// Install Tailwind CSS by following the official documentation:
-// https://tailwindcss.com/docs/installation
-
-// pages/about.js
 export default function About() {
     return (
       <div className=" bg-gray-50 min-h-screen">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="md:w-[1000px] w-[350px] md:mx-auto px-4 sm:px-6 lg:px-8">
           {/* About Us Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="bg-teal-600 text-white p-8 flex flex-col justify-center rounded-lg">
+          <div className="grid grid-cols-1  md:grid-cols-2 gap-6 mt-8">
+            <div className="bg-[#007580] w-[350px] md:w-[465px] text-white p-8 flex flex-col justify-center rounded ">
               <h2 className="text-2xl font-bold mb-4">About Us - Comforty</h2>
-              <p className="text-base leading-relaxed">
+              <p className="text-base leading-relaxed  font-inter font-normal md:w-[435px]">
                 At Comforty, we believe that the right chair can transform your space and elevate your comfort. Specializing in ergonomics, premium materials, and modern aesthetics, we craft chairs that seamlessly blend style with functionality.
               </p>
-              <button className="mt-6 px-4 py-2 bg-[#F9F9F9] text-teal-600 font-medium rounded shadow hover:bg-gray-100">
+              <button className="mt-28 mb-3 w-[159px] px-4 py-2 bg-[#F9F9F926]  text-white font-medium rounded shadow hover:bg-teal-400">
                 View collection
               </button>
             </div>
             <div>
-              <img
+              <Image
+              width={400}
+              height={400}
                 src="/images/Image.png"
                 alt="Comforty Chair"
-                className="rounded-lg w-full h-full object-cover"
+                className="rounded-lg md:w-[460px] md:h-[400px] w-[350px] object-cover"
               />
             </div>
           </div>
   
           {/* Brand Differentiators Section */}
-          <div className="mt-16 text-center">
-            <h2 className="text-3xl font-semibold text-gray-900 mb-8">
+          <div className="mt-16 md:text-center">
+            <h2 className="md:text-3xl font-semibold font-inter text-gray-900 mb-8">
               What Makes Our Brand Different
             </h2>
-            <div className="grid grid-cols-1 text-[#007580] sm:grid-cols-2 lg:grid-cols-4  gap-6">
+            <div className="grid grid-cols-1 font-inter text-[#007580] sm:grid-cols-2 lg:grid-cols-4  gap-6">
               {[
                 {
                   title: 'Next day as standard',
@@ -65,7 +63,7 @@ export default function About() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-[#F9F9F9] shadow rounded-lg p-6 text-[#007580] text-start"
+                  className="bg-[#F9F9F9] w-[250px] md:w-full shadow rounded-lg p-6 text-[#007580] text-start"
                 >
                   <div className=" mb-4">{item.icon}</div>
                   <h3 className="text-lg font-semibold  text-[#007580]  mb-2">
@@ -79,10 +77,10 @@ export default function About() {
   
           {/* Popular Products Section */}
           <div className="mt-16">
-            <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">
+            <h2 className="text-2xl font-bold font-inter text-gray-900 md:text-center mb-8">
               Our Popular Products
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 font-inter sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
                   name: 'The Poplar suede sofa',
@@ -102,14 +100,16 @@ export default function About() {
               ].map((product, index) => (
                 <div
                   key={index}
-                  className="bg-white shadow rounded-lg overflow-hidden"
+                  className="bg-white shadow rounded-lg md:w-full w-[250px] overflow-hidden "
                 >
-                  <img
+                  <Image
+                  width={400}
+                  height={400}
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-[348px] object-cover"
+                    className="md:w-[1000px] w-[250px] h-[248px] object-cover"
                   />
-                  <div className="p-4 text-center">
+                  <div className="p-4 md:text-center">
                     <h3 className="text-lg font-semibold text-gray-800">
                       {product.name}
                     </h3>
