@@ -3,7 +3,6 @@ import { FiMapPin, FiPhone, FiClock } from "react-icons/fi";
 import { MdOutlineVerified } from "react-icons/md";
 import { GoTrophy } from "react-icons/go";
 import { RiCustomerService2Line } from "react-icons/ri";
-import { Poppins } from "next/font/google";
 
 
 
