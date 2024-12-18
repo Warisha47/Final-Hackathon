@@ -98,7 +98,7 @@ const TopHeader = () => {
        {/* mobile menu button */}
       <div className="md:hidden">
        <details className="dropdown">
-  <summary className="btn m-1"><IoMenu/></summary>
+  <summary className="btn m-1"><IoMenu className="text-3xl"/></summary>
   <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-22 p-2 shadow">
   <li className="hover:text-[#007580]"><Link href="/">Home</Link></li>
             <li className="hover:text-[#007580]"><Link href="/shop">Shop</Link></li>
