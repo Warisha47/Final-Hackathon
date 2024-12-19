@@ -19,7 +19,7 @@ const TopHeader = () => {
 
  
   return (
-    <div className="w-full">
+    <div >
       {/* Top Header */}
       <header className="bg-[#272343] text-white py-2 sm:py-3 md:py-3.5 lg:py-[14px]">
         <div className="flex flex-col sm:flex-row justify-between items-center px-4 sm:px-8 md:px-[100px] lg:px-[200px]">
@@ -99,7 +99,7 @@ const TopHeader = () => {
       <div className="md:hidden">
        <details className="dropdown">
   <summary className="btn m-1"><IoMenu className="text-3xl"/></summary>
-  <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-22 p-2 shadow">
+  <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-[120px] md:w-22 p-2 shadow">
   <li className="hover:text-[#007580]"><Link href="/">Home</Link></li>
             <li className="hover:text-[#007580]"><Link href="/shop">Shop</Link></li>
             <li className="hover:text-[#007580]"><Link href="/product">Product</Link></li>
